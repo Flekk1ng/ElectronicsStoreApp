@@ -16,4 +16,4 @@
 * ADO.NET, C#, WPF
 * RDLC reports
 
-*Приложение разработано без использования ORM-систем, а также с использованием различных [представлений] (<https://github.com/Flekk1ng/ElectronicsStoreApp/blob/main/SQLs/views.sql>), [процедур] (<https://github.com/Flekk1ng/ElectronicsStoreApp/blob/main/SQLs/procs.sql>), [функций] (<https://github.com/Flekk1ng/ElectronicsStoreApp/blob/main/SQLs/funcs.sql>) и [триггеров] (<https://github.com/Flekk1ng/ElectronicsStoreApp/blob/main/SQLs/triggers.sql>) на стороне сервера*
+*Приложение разработано без использования ORM-систем, а также с использованием различных [представлений](<https://github.com/Flekk1ng/ElectronicsStoreApp/blob/main/SQLs/views.sql>), [процедур](<https://github.com/Flekk1ng/ElectronicsStoreApp/blob/main/SQLs/procs.sql>), [функций](<https://github.com/Flekk1ng/ElectronicsStoreApp/blob/main/SQLs/funcs.sql>) и [триггеров](<https://github.com/Flekk1ng/ElectronicsStoreApp/blob/main/SQLs/triggers.sql>) на стороне сервера*
