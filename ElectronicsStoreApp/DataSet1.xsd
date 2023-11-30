@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet1" targetNamespace="http://tempuri.org/DataSet1.xsd" xmlns:mstns="http://tempuri.org/DataSet1.xsd" xmlns="http://tempuri.org/DataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" GeneratorFunctionsComponentClassName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" UserFunctionsComponentName="QueriesTableAdapter" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ElectronicsStoreDBConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ElectronicsStoreDBConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.ElectronicsStoreApp.Properties.Settings.GlobalReference.Default.ElectronicsStoreDBConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="ИнформТехникаTableAdapter" GeneratorDataComponentClassName="ИнформТехникаTableAdapter" Name="ИнформТехника" UserDataComponentName="ИнформТехникаTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ElectronicsStoreDBConnectionString (Settings)" DbObjectName="ElectronicsStoreDB.dbo.ИнформТехника" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Поставщик, Вид, Модель, Цена, Количество, ДатаВыпуска, СрокГарантии, ТипГарантии FROM dbo.ИнформТехника</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Поставщик" DataSetColumn="Поставщик" />
+              <Mapping SourceColumn="Вид" DataSetColumn="Вид" />
+              <Mapping SourceColumn="Модель" DataSetColumn="Модель" />
+              <Mapping SourceColumn="Цена" DataSetColumn="Цена" />
+              <Mapping SourceColumn="Количество" DataSetColumn="Количество" />
+              <Mapping SourceColumn="ДатаВыпуска" DataSetColumn="ДатаВыпуска" />
+              <Mapping SourceColumn="СрокГарантии" DataSetColumn="СрокГарантии" />
+              <Mapping SourceColumn="ТипГарантии" DataSetColumn="ТипГарантии" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="СтоимостьПоКатегориямTableAdapter" GeneratorDataComponentClassName="СтоимостьПоКатегориямTableAdapter" Name="СтоимостьПоКатегориям" UserDataComponentName="СтоимостьПоКатегориямTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ElectronicsStoreDBConnectionString (Settings)" DbObjectName="ElectronicsStoreDB.dbo.СтоимостьПоКатегориям" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Категория, Стоимость FROM dbo.СтоимостьПоКатегориям</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Категория" DataSetColumn="Категория" />
+              <Mapping SourceColumn="Стоимость" DataSetColumn="Стоимость" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="ПолучитьОплатыРассрочкиПокупкиTableAdapter" GeneratorDataComponentClassName="ПолучитьОплатыРассрочкиПокупкиTableAdapter" Name="ПолучитьОплатыРассрочкиПокупки" UserDataComponentName="ПолучитьОплатыРассрочкиПокупкиTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ElectronicsStoreDBConnectionString (Settings)" DbObjectName="ElectronicsStoreDB.dbo.ПолучитьОплатыРассрочкиПокупки" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT idПокупки, Модель, Покупатель, СуммаОплаты, ДатаОплаты FROM dbo.ПолучитьОплатыРассрочкиПокупки</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="idПокупки" DataSetColumn="idПокупки" />
+              <Mapping SourceColumn="Модель" DataSetColumn="Модель" />
+              <Mapping SourceColumn="Покупатель" DataSetColumn="Покупатель" />
+              <Mapping SourceColumn="СуммаОплаты" DataSetColumn="СуммаОплаты" />
+              <Mapping SourceColumn="ДатаОплаты" DataSetColumn="ДатаОплаты" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="ПрожадиПоГодамИМесяцамTableAdapter" GeneratorDataComponentClassName="ПрожадиПоГодамИМесяцамTableAdapter" Name="ПрожадиПоГодамИМесяцам" UserDataComponentName="ПрожадиПоГодамИМесяцамTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ElectronicsStoreDBConnectionString (Settings)" DbObjectName="ElectronicsStoreDB.dbo.ПрожадиПоГодамИМесяцам" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Год, Месяц, СтоимостьПродаж FROM dbo.ПрожадиПоГодамИМесяцам</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Год" DataSetColumn="Год" />
+              <Mapping SourceColumn="Месяц" DataSetColumn="Месяц" />
+              <Mapping SourceColumn="СтоимостьПродаж" DataSetColumn="СтоимостьПродаж" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="DataSet1" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="ИнформТехника" msprop:Generator_RowEvHandlerName="ИнформТехникаRowChangeEventHandler" msprop:Generator_RowDeletedName="ИнформТехникаRowDeleted" msprop:Generator_RowDeletingName="ИнформТехникаRowDeleting" msprop:Generator_RowEvArgName="ИнформТехникаRowChangeEvent" msprop:Generator_TablePropName="ИнформТехника" msprop:Generator_RowChangedName="ИнформТехникаRowChanged" msprop:Generator_UserTableName="ИнформТехника" msprop:Generator_RowChangingName="ИнформТехникаRowChanging" msprop:Generator_RowClassName="ИнформТехникаRow" msprop:Generator_TableClassName="ИнформТехникаDataTable" msprop:Generator_TableVarName="tableИнформТехника">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Поставщик" msprop:Generator_ColumnPropNameInTable="ПоставщикColumn" msprop:Generator_ColumnPropNameInRow="Поставщик" msprop:Generator_UserColumnName="Поставщик" msprop:Generator_ColumnVarNameInTable="columnПоставщик">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Вид" msprop:Generator_ColumnPropNameInTable="ВидColumn" msprop:Generator_ColumnPropNameInRow="Вид" msprop:Generator_UserColumnName="Вид" msprop:Generator_ColumnVarNameInTable="columnВид">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Модель" msprop:Generator_ColumnPropNameInTable="МодельColumn" msprop:Generator_ColumnPropNameInRow="Модель" msprop:Generator_UserColumnName="Модель" msprop:Generator_ColumnVarNameInTable="columnМодель">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Цена" msprop:Generator_ColumnPropNameInTable="ЦенаColumn" msprop:Generator_ColumnPropNameInRow="Цена" msprop:Generator_UserColumnName="Цена" msprop:Generator_ColumnVarNameInTable="columnЦена" type="xs:decimal" />
+              <xs:element name="Количество" msprop:Generator_ColumnPropNameInTable="КоличествоColumn" msprop:Generator_ColumnPropNameInRow="Количество" msprop:Generator_UserColumnName="Количество" msprop:Generator_ColumnVarNameInTable="columnКоличество" type="xs:int" />
+              <xs:element name="ДатаВыпуска" msprop:Generator_ColumnPropNameInTable="ДатаВыпускаColumn" msprop:Generator_ColumnPropNameInRow="ДатаВыпуска" msprop:Generator_UserColumnName="ДатаВыпуска" msprop:Generator_ColumnVarNameInTable="columnДатаВыпуска" type="xs:dateTime" />
+              <xs:element name="СрокГарантии" msprop:Generator_ColumnPropNameInTable="СрокГарантииColumn" msprop:Generator_ColumnPropNameInRow="СрокГарантии" msprop:Generator_UserColumnName="СрокГарантии" msprop:Generator_ColumnVarNameInTable="columnСрокГарантии" type="xs:int" />
+              <xs:element name="ТипГарантии" msprop:Generator_ColumnPropNameInTable="ТипГарантииColumn" msprop:Generator_ColumnPropNameInRow="ТипГарантии" msprop:Generator_UserColumnName="ТипГарантии" msprop:Generator_ColumnVarNameInTable="columnТипГарантии">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="СтоимостьПоКатегориям" msprop:Generator_RowClassName="СтоимостьПоКатегориямRow" msprop:Generator_RowEvHandlerName="СтоимостьПоКатегориямRowChangeEventHandler" msprop:Generator_RowDeletedName="СтоимостьПоКатегориямRowDeleted" msprop:Generator_RowDeletingName="СтоимостьПоКатегориямRowDeleting" msprop:Generator_RowEvArgName="СтоимостьПоКатегориямRowChangeEvent" msprop:Generator_TablePropName="СтоимостьПоКатегориям" msprop:Generator_RowChangedName="СтоимостьПоКатегориямRowChanged" msprop:Generator_UserTableName="СтоимостьПоКатегориям" msprop:Generator_RowChangingName="СтоимостьПоКатегориямRowChanging" msprop:Generator_TableClassName="СтоимостьПоКатегориямDataTable" msprop:Generator_TableVarName="tableСтоимостьПоКатегориям">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Категория" msprop:Generator_UserColumnName="Категория" msprop:Generator_ColumnPropNameInTable="КатегорияColumn" msprop:Generator_ColumnPropNameInRow="Категория" msprop:Generator_ColumnVarNameInTable="columnКатегория">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Стоимость" msdata:ReadOnly="true" msprop:Generator_UserColumnName="Стоимость" msprop:Generator_ColumnPropNameInTable="СтоимостьColumn" msprop:Generator_ColumnPropNameInRow="Стоимость" msprop:Generator_ColumnVarNameInTable="columnСтоимость" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ПолучитьОплатыРассрочкиПокупки" msprop:Generator_RowEvHandlerName="ПолучитьОплатыРассрочкиПокупкиRowChangeEventHandler" msprop:Generator_RowDeletedName="ПолучитьОплатыРассрочкиПокупкиRowDeleted" msprop:Generator_RowDeletingName="ПолучитьОплатыРассрочкиПокупкиRowDeleting" msprop:Generator_RowEvArgName="ПолучитьОплатыРассрочкиПокупкиRowChangeEvent" msprop:Generator_TablePropName="ПолучитьОплатыРассрочкиПокупки" msprop:Generator_RowChangedName="ПолучитьОплатыРассрочкиПокупкиRowChanged" msprop:Generator_RowChangingName="ПолучитьОплатыРассрочкиПокупкиRowChanging" msprop:Generator_TableClassName="ПолучитьОплатыРассрочкиПокупкиDataTable" msprop:Generator_RowClassName="ПолучитьОплатыРассрочкиПокупкиRow" msprop:Generator_TableVarName="tableПолучитьОплатыРассрочкиПокупки" msprop:Generator_UserTableName="ПолучитьОплатыРассрочкиПокупки">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="idПокупки" msprop:Generator_ColumnPropNameInRow="idПокупки" msprop:Generator_ColumnPropNameInTable="idПокупкиColumn" msprop:Generator_ColumnVarNameInTable="columnidПокупки" msprop:Generator_UserColumnName="idПокупки" type="xs:int" />
+              <xs:element name="Модель" msprop:Generator_ColumnPropNameInRow="Модель" msprop:Generator_ColumnPropNameInTable="МодельColumn" msprop:Generator_ColumnVarNameInTable="columnМодель" msprop:Generator_UserColumnName="Модель">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Покупатель" msprop:Generator_ColumnPropNameInRow="Покупатель" msprop:Generator_ColumnPropNameInTable="ПокупательColumn" msprop:Generator_ColumnVarNameInTable="columnПокупатель" msprop:Generator_UserColumnName="Покупатель">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="80" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="СуммаОплаты" msprop:Generator_ColumnPropNameInRow="СуммаОплаты" msprop:Generator_ColumnPropNameInTable="СуммаОплатыColumn" msprop:Generator_ColumnVarNameInTable="columnСуммаОплаты" msprop:Generator_UserColumnName="СуммаОплаты" type="xs:decimal" />
+              <xs:element name="ДатаОплаты" msprop:Generator_ColumnPropNameInRow="ДатаОплаты" msprop:Generator_ColumnPropNameInTable="ДатаОплатыColumn" msprop:Generator_ColumnVarNameInTable="columnДатаОплаты" msprop:Generator_UserColumnName="ДатаОплаты" type="xs:dateTime" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ПрожадиПоГодамИМесяцам" msprop:Generator_RowEvHandlerName="ПрожадиПоГодамИМесяцамRowChangeEventHandler" msprop:Generator_RowDeletedName="ПрожадиПоГодамИМесяцамRowDeleted" msprop:Generator_RowDeletingName="ПрожадиПоГодамИМесяцамRowDeleting" msprop:Generator_RowEvArgName="ПрожадиПоГодамИМесяцамRowChangeEvent" msprop:Generator_TablePropName="ПрожадиПоГодамИМесяцам" msprop:Generator_RowChangedName="ПрожадиПоГодамИМесяцамRowChanged" msprop:Generator_RowChangingName="ПрожадиПоГодамИМесяцамRowChanging" msprop:Generator_TableClassName="ПрожадиПоГодамИМесяцамDataTable" msprop:Generator_RowClassName="ПрожадиПоГодамИМесяцамRow" msprop:Generator_TableVarName="tableПрожадиПоГодамИМесяцам" msprop:Generator_UserTableName="ПрожадиПоГодамИМесяцам">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Год" msprop:Generator_ColumnPropNameInRow="Год" msprop:Generator_ColumnPropNameInTable="ГодColumn" msprop:Generator_ColumnVarNameInTable="columnГод" msprop:Generator_UserColumnName="Год" type="xs:int" minOccurs="0" />
+              <xs:element name="Месяц" msprop:Generator_ColumnPropNameInRow="Месяц" msprop:Generator_ColumnPropNameInTable="МесяцColumn" msprop:Generator_ColumnVarNameInTable="columnМесяц" msprop:Generator_UserColumnName="Месяц" type="xs:int" minOccurs="0" />
+              <xs:element name="СтоимостьПродаж" msprop:Generator_ColumnPropNameInRow="СтоимостьПродаж" msprop:Generator_ColumnPropNameInTable="СтоимостьПродажColumn" msprop:Generator_ColumnVarNameInTable="columnСтоимостьПродаж" msprop:Generator_UserColumnName="СтоимостьПродаж" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
